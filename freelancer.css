@@ -1,0 +1,321 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans TC', sans-serif, arial;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-size: 14px;
+}
+
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+
+/*nav的設定*/
+
+nav {
+    height: 100px;
+    width: 100%;
+    background-color: #2C3E50;
+    position: fixed;
+    top: 0;
+    color: aliceblue;
+}
+
+.nav-left {
+    color: azure;
+    font-size: 2em;
+    float: left;
+    font-weight: 600;
+    line-height: 100px;
+    padding-left: 130px;
+}
+
+nav ul>li {
+    list-style-type: none;
+    display: inline-block;
+    color: azure;
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 80px;
+    padding: 10px;
+}
+
+
+/*header的設定*/
+
+header {
+    height: 620px;
+    background-color: #18BC9C;
+    text-align: center;
+    font-size: 1.5em;
+    color: azure;
+}
+
+.container {
+    padding-top: 180px;
+}
+
+.ability {
+    font-size: 5em;
+    font-weight: 600;
+}
+
+.description {
+    font-size: 1.2em;
+    margin: 10px auto;
+}
+
+
+/*PORTFOLIO的設定*/
+
+.container-port {
+    width: 100%;
+    height: 200px;
+    padding: 40px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container-port h1 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 3em;
+    padding-top: 30px;
+}
+
+
+/*六張圖的設定*/
+
+.container-portimg {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container-portimg img {
+    padding: 18px;
+}
+
+
+/*About的設定*/
+
+.About {
+    background-color: #18BC9C;
+}
+
+.About .container-about {
+    width: 60%;
+    height: 300px;
+    margin: 0 auto;
+    font-size: 3em;
+    text-align: center;
+    color: white;
+}
+
+.container-about h1 {
+    padding: 16px;
+    text-align: center;
+    color: white;
+    font-size: 3em;
+}
+
+.about-left {
+    font-size: 2em;
+    text-align: left;
+    color: white;
+    padding: 30px;
+}
+
+.about-right {
+    font-size: 2em;
+    text-align: left;
+    color: white;
+    padding: 30px;
+}
+
+.download {
+    width: 140px;
+    height: 40px;
+    border: 2px solid white;
+    color: white;
+    border-radius: 6%;
+    text-align: center;
+    line-height: 40px;
+    margin: 30px auto;
+}
+
+
+/*設定Contact*/
+
+.container-contact {
+    width: 60%;
+    height: 350px;
+    padding-top: 40px;
+    margin: 0 auto;
+}
+
+.container-contact h1 {
+    color: #2C3E50;
+    text-align: center;
+    font-size: 3em;
+    padding: 30px;
+}
+
+.container-contact .row {
+    color: grey;
+    text-align: left;
+}
+
+.container-contact p {
+    color: grey;
+    font-size: 1.2em;
+    padding: 12px;
+}
+
+.send {
+    width: 50px;
+    height: 30px;
+    margin: 60px 0;
+    border: 1px solid white;
+    color: white;
+    line-height: 30px;
+    text-align: center;
+    background-color: #18BC9C;
+    border-radius: 10%;
+}
+
+
+/*information設定*/
+
+.information {
+    height: 200px;
+    background-color: #2C3E50;
+    color: white;
+}
+
+.information .row {
+    width: 100%;
+    padding-top: 20px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #2C3E50;
+}
+
+.information p {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.social {
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin: 20px auto;
+    border: 1px solid white;
+    border-radius: 50%;
+    font-size: 1.3em;
+}
+
+
+/*footer設定*/
+
+footer {
+    height: 50px;
+    font-size: 0.8em;
+    line-height: 50px;
+    color: white;
+    background-color: #233140;
+    text-align: center;
+}
+
+
+/*設定RWD*/
+
+[class*="col-"] {
+    width: 100%;
+    float: left;
+}
+
+@media screen and (min-width:992px) {
+    .col-md-1 {
+        width: calc(100%*1/12);
+    }
+    .col-md-2 {
+        width: calc(100%*2/12);
+    }
+    .col-md-3 {
+        width: calc(100%*3/12);
+    }
+    .col-md-4 {
+        width: calc(100%*4/12);
+    }
+    .col-md-5 {
+        width: calc(100%*5/12);
+    }
+    .col-md-6 {
+        width: calc(100%*6/12);
+    }
+    .col-md-7 {
+        width: calc(100%*7/12);
+    }
+    .col-md-8 {
+        width: calc(100%*8/12);
+    }
+    .col-md-9 {
+        width: calc(100%*9/12);
+    }
+    .col-md-10 {
+        width: calc(100%*10/12);
+    }
+    .col-md-11 {
+        width: calc(100%*11/12);
+    }
+    .col-md-12 {
+        width: calc(100%*12/12);
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+    .col-sm-1 {
+        width: calc(100%*1/12);
+    }
+    .col-sm-2 {
+        width: calc(100%*2/12);
+    }
+    .col-sm-3 {
+        width: calc(100%*3/12);
+    }
+    .col-sm-4 {
+        width: calc(100%*4/12);
+    }
+    .col-sm-5 {
+        width: calc(100%*5/12);
+    }
+    .col-sm-6 {
+        width: calc(100%*6/12);
+    }
+    .col-sm-7 {
+        width: calc(100%*7/12);
+    }
+    .col-sm-8 {
+        width: calc(100%*8/12);
+    }
+    .col-sm-9 {
+        width: calc(100%*9/12);
+    }
+    .col-sm-10 {
+        width: calc(100%*10/12);
+    }
+    .col-sm-11 {
+        width: calc(100%*11/12);
+    }
+    .col-sm-12 {
+        width: calc(100%*12/12);
+    }
+}
